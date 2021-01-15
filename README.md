@@ -10,7 +10,7 @@
 - Css
 
 ## Live Demo
-[Live Demo Link](https://rawcdn.githack.com/Alexoid1/Restaurant-Page/bf56867f79712fb56a179c3479458143b8d4695b/dist/index.html)
+[Live Demo Link](https://react-calcu.herokuapp.com)
  
 
 ### Prerequisites
