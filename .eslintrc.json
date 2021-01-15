@@ -1,4 +1,4 @@
-/*eslint import/no-cycle: [2, { maxDepth: 1 }]*/
+/*eslint import/no-cycle: [2, { ignoreExternal: true }]*/
 
 {
   "env": {
