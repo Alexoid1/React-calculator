@@ -1,20 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Display(result) {
+function Display({ result }) {
   return (
-    <div>
-      <h2>{result}</h2>
-    </div>
+    <>
+      <div>
+        <h2>{result}</h2>
+      </div>
+    </>
   );
 }
-
-Display.prototype = {
-  name: PropTypes.String,
-};
-
 Display.defaultProps = {
   result: '0',
+};
+
+Display.propTypes = {
+  result: PropTypes.string,
 };
 
 export default Display;
