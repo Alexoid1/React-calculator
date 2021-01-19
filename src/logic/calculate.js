@@ -5,7 +5,7 @@ function calculate(data, buttonName) {
   const { next } = data;
   const { operation } = data;
   let result;
-  const arr = ['+', '-', 'x', '÷', '%', '.'];
+  const arr = ['+', '-', 'x', '÷', '%'];
 
   if (buttonName === '=') {
     result = { total };
