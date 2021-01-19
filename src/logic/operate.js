@@ -24,7 +24,6 @@ const operate = (number1, number2, operation) => {
       total = num1.mod(num2).toString();
       break;
     default:
-          // code block
   }
 
   return total;
