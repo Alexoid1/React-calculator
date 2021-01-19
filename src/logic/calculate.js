@@ -1,33 +1,30 @@
-import React from 'react';
-import operate from './operate'
+import operate from './operate';
 
-function calculate(data,buttonName) {
-    let result;
-    const arr = ['+', '-', 'x', '÷', '%'];
-  
-    if (btn === '=') {
-      result = { total: data.total };
-    }
-    if (btn === '+/-') {
-      result = {
-        total: data.total * -1,
-        next: data.next * -1,
-        operation: null,
-      };
-    }
-    if (btn === 'AC') {
-      result = {
-        total: null,
-        next: null,
-        operation: null,
-      };
-    }
-    if (arr.includes(btn)) {
-      result = operate(data.total, data.next, btn);
-    }
-    return result;
+function calculate(data, buttonName) {
+  let result;
+  const arr = ['+', '-', 'x', '÷', '%'];
 
-    
+  if (buttonName === '=') {
+    result = { total: data.total };
+  }
+  if (buttonName === '+/-') {
+    result = {
+      total: data.total * -1,
+      next: data.next * -1,
+      operation: null,
+    };
+  }
+  if (buttonName === 'AC') {
+    result = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+  if (arr.includes(buttonName)) {
+    result = operate(data.total, data.next, buttonName);
+  }
+  return result;
 }
 
 export default calculate;
