@@ -1,17 +1,17 @@
 import operate from './operate';
 
 function calculate(data, buttonName) {
-  let { total, next, operation } = data;
+  const { total, next, operation = buttonName } = data;
   let result;
   const arr = ['+', '-', 'x', '÷', '%'];
 
   if (buttonName === '=') {
-    result = { total: data.total };
+    result = { total };
   }
   if (buttonName === '+/-') {
     result = {
-      total: data.total * -1,
-      next: data.next * -1,
+      total: total * -1,
+      next: next * -1,
       operation: null,
     };
   }
@@ -23,7 +23,7 @@ function calculate(data, buttonName) {
     };
   }
   if (arr.includes(buttonName)) {
-    result = operate(data.total, data.next, buttonName);
+    result = operate(total, next, operation);
   }
   return result;
 }
