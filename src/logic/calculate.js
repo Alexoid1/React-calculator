@@ -30,12 +30,21 @@ function calculate(data, buttonName) {
     };
   }
   if (arr.includes(buttonName)) {
-    // operate(total, next, buttonName);
-    result = {
-      total,
-      next,
-      operation: operation ? operation += buttonName.toString() : operation = buttonName.toString(),
-    };
+    if (!next) {
+      result = {
+        total,
+        next,
+        operation: operation ? operation = buttonName.toString()
+          : operation = buttonName.toString(),
+      };
+    } else if (next) {
+      result = {
+        total: operate(total, next, operation),
+        next: null,
+        operation: operation ? operation = buttonName.toString()
+          : operation = buttonName.toString(),
+      };
+    }
   }
   if (nums.includes(buttonName)) {
     if (!operation) {
