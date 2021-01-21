@@ -6,6 +6,7 @@ function calculate(data, buttonName) {
   const { operation } = data;
   let result;
   const arr = ['+', '-', 'x', '÷', '%'];
+  const nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
   if (buttonName === '=') {
     result = { total };
@@ -26,6 +27,13 @@ function calculate(data, buttonName) {
   }
   if (arr.includes(buttonName)) {
     result = operate(total, next, operation);
+  }
+  if (nums.includes(buttonName)) {
+    result = {
+      total,
+      next: next ? `${next}${buttonName}` : `${buttonName}`,
+      operation,
+    };
   }
   return result;
 }
