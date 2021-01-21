@@ -28,7 +28,7 @@ class App extends React.Component {
       <>
         <h1 className="title">Calculator</h1>
         <Display result={
-            `${(!total && next) || total || ''}
+            `${total || ''}
              ${operation || ''}
              ${(total && next) || ''}`
           }
