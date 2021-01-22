@@ -26,14 +26,17 @@ class App extends React.Component {
     const { total, next, operation } = this.state;
     return (
       <>
-        <h1 className="title">Calculator</h1>
-        <Display result={
-            `${total || ''}
-             ${operation || ''}
-             ${(total && next) || ''}`
-          }
-        />
-        <ButtonPanel clickHandler={this.handleClick} />
+        <div className="card calc-body">
+          <div className="card-body">
+            <Display result={
+                  `${total || ''}
+                  ${operation || ''}
+                  ${(total && next) || ''}`
+                }
+            />
+            <ButtonPanel clickHandler={this.handleClick} />
+          </div>
+        </div>
       </>
     );
   }
