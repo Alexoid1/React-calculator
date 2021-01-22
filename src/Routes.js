@@ -1,12 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './components/App';
+import Navbar from './components/Navbar';
 
 const Routes = () => (
   <BrowserRouter>
-    <Switch>
-      <Route path="/" component={App} />
-    </Switch>
+    <Navbar />
+    <div>
+      <Switch>
+        <Route path="/calculator" component={App} />
+      </Switch>
+    </div>
   </BrowserRouter>
 );
 
