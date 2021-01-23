@@ -23,8 +23,8 @@
   width: 18rem;
   background: #f7f7f7;
   border-radius: 10px 10px 25px 25px;
-  box-shadow: inset -15px 15px 15px rgba(255,255,255,.2), 
+  box-shadow: inset -15px 15px 15px rgba(255, 255, 255, .2), 
               inset 15px -15px 15px #e9e7e9, 
-              4px 4px 15px rgba(0,0,0,.2), 
-              -4px 4px 15px rgba(0,0,0,.2);
+              4px 4px 15px rgba(0, 0, 0, .2), 
+              -4px 4px 15px rgba(0, 0, 0, .2);
 }
