@@ -1,7 +1,7 @@
 # React Calculator 
 
 
-
+![screenshot](./img/calc.png)
 
 
 ## Built With
