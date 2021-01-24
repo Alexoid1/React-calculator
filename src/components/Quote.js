@@ -14,18 +14,18 @@ function Quote() {
     { quote: '“It is the story that matters not just the ending.”', author: 'Paul Lockhart' },
     { quote: '“But in my opinion, all things in nature occur mathematically.”', author: 'Rene Decartes' },
     { quote: '“Since the mathematicians have invaded the theory of relativity I do not understand it myself any more.”', author: 'Albert Einstein' }];
-  const xval = Math.floor(Math.random() * 12);
+  // const xval = Math.floor(Math.random() * 12);
   return (
     <>
       <div className="quoteCont">
         <p>
           <i>
-          “Since the mathematicians have invaded the theory of relativity I do not understand it myself any more.”
+            {quotes[11].quote}
           </i>
         </p>
         <p>
           <strong>
-          Albert Einstein
+            {quotes[11].author}
           </strong>
         </p>
       </div>

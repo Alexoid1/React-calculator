@@ -13,7 +13,9 @@
 
 ## Live Demo
 [Live Demo Link](https://react-calcu.herokuapp.com)
- 
+
+### Test
+- `npm test`
 
 ### Prerequisites
 

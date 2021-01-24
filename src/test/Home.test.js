@@ -1,9 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Home from '../components/Home.js'
+import Home from '../components/Home';
 
 it('renders correctly the Home Page', () => {
-    const tree = renderer.create(<Home />).toJSON();
-  
-    expect(tree).toMatchSnapshot();
+  const tree = renderer.create(<Home />).toJSON();
+
+  expect(tree).toMatchSnapshot();
 });
