@@ -20,12 +20,12 @@ function Quote() {
       <div className="quoteCont">
         <p>
           <i>
-            {quotes[xval].quote}
+          “Since the mathematicians have invaded the theory of relativity I do not understand it myself any more.”
           </i>
         </p>
         <p>
           <strong>
-            {quotes[xval].author}
+          Albert Einstein
           </strong>
         </p>
       </div>

@@ -7,6 +7,8 @@
 ## Built With
 
 - React
+- JavaScript
+- Jest
 - Css
 
 ## Live Demo
