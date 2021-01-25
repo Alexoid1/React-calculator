@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly the Quote Page 1`] = `
+<div
+  className="quoteCont"
+>
+  <p>
+    <i>
+      “Since the mathematicians have invaded the theory of relativity I do not understand it myself any more.”
+    </i>
+  </p>
+  <p>
+    <strong>
+      Albert Einstein
+    </strong>
+  </p>
+</div>
+`;
