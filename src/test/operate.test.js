@@ -13,11 +13,11 @@ describe('operate', () => {
     const newData = operate(5, 20, 'x');
     expect(newData).toEqual('100');
   });
-  it('should return the multiplication of numbers', () => {
+  it('should return the division of numbers', () => {
     const newData = operate(20, 5, '÷');
     expect(newData).toEqual('4');
   });
-  it('should return the multiplication of numbers', () => {
+  it('should return the percentage of numbers', () => {
     const newData = operate(20, 5, '%');
     expect(newData).toEqual('0');
   });
