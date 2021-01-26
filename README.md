@@ -12,7 +12,7 @@
 - Css
 
 ## Live Demo
-[Live Demo Link](https://alexoid1.github.io/quote)
+[Live Demo Link](https://alexoid1.github.io/React-calculator)
 
 ### Test
 - `npm test`
